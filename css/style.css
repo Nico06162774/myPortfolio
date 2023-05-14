@@ -13,7 +13,7 @@
 	text-decoration: none;
 	/*list-style: none;*/
 	outline:none; border:none;
-	/* text-transform: none; */
+	/* text-transform: capitalize; */
 	transition: all .2s linear;
 }
 
@@ -306,12 +306,13 @@ header .navbar ul li a:hover{
 }
 
 .works .box-container .box{
-	height: 29rem;
-	width: 30rem;
+	height: 30rem;
+	width: 45rem;
 	/* border-radius: 1rem; */
 	margin: 2rem;
 	overflow: hidden;
 	cursor: pointer;
+	
 }
 
 .works .box-container .box img{
