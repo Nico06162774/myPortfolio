@@ -68,6 +68,17 @@ section{
 	background-color: var(--red);
 }
 
+.heading{
+	text-align: center;
+	margin: 0 6rem;
+	font-size: 4rem;
+	padding: 1rem;
+	border-bottom: 1rem solid #fff4;
+	color: #fff;
+}
+.heading span{
+	color: var(--yellow);
+}
 header{
 	position: fixed;
 	top: 0; left: 0;
@@ -139,6 +150,143 @@ header .navbar ul li a:hover{
 }
 
 
+.home{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+	padding: 0 15rem;
+}
+
+.home h3{
+	font-size: 2.5rem;
+	color: #fff;
+}
+
+.home h1{
+	font-size: 5rem;
+	color: #fff;
+}
+
+.home h1 span{
+	color: var(--yellow);
+}
+
+.home p{
+	font-size:2rem;
+	color: #eee;
+	padding: 1rem 0;
+}
+
+/* about */
+.about .row{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 1rem 0;
+}
+
+.about .row .info{
+	flex: 1 1 48rem;
+	padding: 2rem 1rem;
+	padding-left: 6rem;
+}
+
+.about .row .info h3{
+	font-size: 2rem;
+	color: var(--yellow);
+	padding: 1rem 0;
+	font-weight: normal;
+}
+
+.about .row .info h3 span{
+	
+	color: #eee;
+	padding: 0 .5rem;
+	
+}
+.about .row .counter{
+	flex: 1 1 48rem;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 4rem;
+
+}
+.about .row .counter .box{
+	width: 23rem;
+	background: #222;
+	text-align: center;
+	padding: 2rem;
+	margin: 2rem;
+}
+
+.about .row .counter .box span{
+	font-size: 3.2rem;
+	color: var(--yellow);
+}
+
+.about .row .counter .box h3{
+	font-size: 2.5rem;
+	color: #fff;
+}
+
+/* .education */
+
+.education .box-container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 1rem 0;
+	padding-left: 3rem;
+	
+
+}
+
+.education .box-container .box{
+	width: 27rem;
+	margin: 4rem 1rem;
+	padding-left: 4rem;
+	border-left: .2rem solid #fff;
+	position: relative;
+}
+
+.education .box-container .box span{
+	font-size: 1.5rem;
+	background-color: #222;
+	color: #fff;
+	border-radius: 5rem;
+	padding: .5rem 2.5rem;
+}
+
+.education .box-container .box h3{
+	font-size: 2rem;
+	color: #fff;
+	padding-top: 1.5rem;
+}
+.education .box-container .box p{
+	font-size: 1.8rem;
+	color: #eee;
+	padding-top: 1rem 0;
+}
+
+.education .box-container .box i{
+	position: absolute;
+	top: -1.5rem;
+	left: -2.5rem;
+	width: 5rem;
+	border-radius: 50%;
+	line-height: 5rem;
+	text-align: center;
+	font-size: 2rem;
+	color: #fff;
+	background: var(--yellow);
+}
+
+
+/* media queries */
 @media (max-width:1200px){
 
 	html{
@@ -178,33 +326,15 @@ header .navbar ul li a:hover{
 	header{
 		width: 100vw;
 	}
+
+	.heading {
+		margin: 0 3rem;
+	}
+	.about .row .counter .box{
+		width: 100%;
+	}
+	.education .box-container .box{
+		width: 100%;
+	}
 	
-}
-
-.home{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: column;
-	padding: 0 15rem;
-}
-
-.home h3{
-	font-size: 2.5rem;
-	color: #fff;
-}
-
-.home h1{
-	font-size: 5rem;
-	color: #fff;
-}
-
-.home h1 span{
-	color: var(--yellow);
-}
-
-.home p{
-	font-size:2rem;
-	color: #eee;
-	padding: 1rem 0;
 }
